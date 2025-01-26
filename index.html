@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Card Viewer</title>
+    <title>Game Card Embed</title>
     <style>
-        /* Reset and basic styling */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Gradient background */
             display: flex;
             justify-content: center;
             align-items: center;
+            background: black;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
             height: 100vh;
-            overflow: hidden; /* Prevent scrolling */
         }
 
         iframe {
-            width: 100vw; /* Full width of the viewport */
-            height: 100vh; /* Full height of the viewport */
-            border: none; /* No border */
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .watermark-overlay {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: black;
+            width: 100px; /* Adjust size to cover watermark */
+            height: 20px;
         }
     </style>
 </head>
 <body>
-    <iframe 
-        src="https://nadeshiko.io/card/eyJuYW1lIjoiU3luSXNBRksiLCJnYW1lIjoiU0tZQkxPQ0tfR0VORVJBTCIsInNpemUiOiJGVUxMIn0=">
-    </iframe>
+    <div class="container">
+        <iframe 
+            src="https://nadeshiko.io/card/eyJuYW1lIjoiU3luSXNBRksiLCJnYW1lIjoiU0tZQkxPQ0tfR0VORVJBTCIsInNpemUiOiJGVUxMIn0=">
+        </iframe>
+        <div class="watermark-overlay"></div>
+    </div>
 </body>
 </html>
