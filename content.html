@@ -51,12 +51,13 @@
         /* Flex container for About Me and Connections */
         .about-connections {
             display: flex;
-            justify-content: space-between;
-            margin-top: 5px; /* Even closer space between sections */
+            gap: 10px; /* Reduced space between sections */
+            margin-top: 0; /* No space above */
         }
 
         .about-me, .connections {
             width: 48%; /* Give each section half of the available space */
+            margin: 0; /* Remove margin */
         }
 
         .connections {
