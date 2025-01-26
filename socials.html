@@ -67,18 +67,9 @@
             text-decoration: none;
             cursor: pointer;
             transition: color 0.3s;
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background-color: #424549;
-            border-radius: 5px;
-            gap: 10px;
-            width: 100%;
-            justify-content: space-between;
         }
         .button:hover {
             color: #7289DA; /* Discord's blurple color */
-            background-color: #36393F;
         }
         .line {
             width: 100%;
@@ -90,11 +81,6 @@
             margin-top: 20px;
             width: 100%;
         }
-        .social-buttons {
-            display: flex;
-            gap: 15px;
-            width: 100%;
-        }
         .connection {
             display: flex;
             align-items: center;
@@ -104,7 +90,6 @@
             border-radius: 5px;
             margin-bottom: 10px;
             transition: background-color 0.3s;
-            width: 100%;
         }
         .connection:hover {
             background-color: #36393F;
@@ -112,17 +97,22 @@
         .connection span {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 15px; /* Increased gap to add more space between text and arrow */
         }
         .connection a {
             color: #7289DA;
             text-decoration: none;
             font-weight: bold;
-            font-size: 18px;
-            margin-left: 15px;
+            font-size: 18px; /* Adjusted size for arrow */
+            margin-left: 15px; /* Adjusted left margin for further spacing */
         }
         .connection a:hover {
-            color: #99AAB5;
+            color: #99AAB5; /* Slight color change on hover */
+        }
+        .github-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         .github-btn img {
             width: 20px;
@@ -144,41 +134,40 @@
             <a href="https://synisafk.github.io/website/about.html" class="button">About Me</a>
             <a href="https://synisafk.github.io/website/socials.html" class="button">Socials</a>
         </div>
+        <!-- Stats Button Added Here -->
+        <a href="https://synisafk.github.io/website/stats.html" class="button">Stats</a> <!-- Replace with your actual stats page link -->
         <div class="line"></div>
 
         <!-- Socials Section -->
         <div class="socials">
-            <div class="social-buttons">
-                <!-- Riot Games and GitHub buttons -->
-                <a href="https://github.com/synisafk" class="button">
-                    <span>
-                        <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332877189389090956/Untitled.png?ex=6796da1d&is=6795889d&hm=4ba800bc3aa565b4a0df459ff50f6a12dcbb0e877a82144e44cff2e4902f58cf&" alt="Riot Games Icon" width="25">
-                        Syn#3790
-                    </span>
-                    <span>→</span>
-                </a>
-                <a href="https://github.com/synisafk" class="button">
-                    <span>
-                        <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332910386789486713/github.png?ex=6796f908&is=6795a788&hm=7e9b5b65c12951fed101514a91c047b1791d5f7b5ee52f62573d5b52c7ab8d4b&" alt="GitHub Icon" width="20">
-                        GitHub
-                    </span>
-                    <span>→</span>
-                </a>
+            <div class="connection">
+                <span>
+                    <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332877189389090956/Untitled.png?ex=6796da1d&is=6795889d&hm=4ba800bc3aa565b4a0df459ff50f6a12dcbb0e877a82144e44cff2e4902f58cf&" alt="Riot Games Icon" width="25">
+                    Syn#3790
+                </span>
             </div>
-            <a href="https://twitch.tv/synisafk" class="button">
+            <div class="connection">
                 <span>
                     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111668.png" alt="Twitch Icon" width="20">
                     synisafk
                 </span>
-                <span>→</span>
-            </a>
-            <a href="https://steamcommunity.com/id/SynIsAfk/" class="button">
+                <a href="https://twitch.tv/synisafk" target="_blank">→</a>
+            </div>
+            <div class="connection">
                 <span>
                     <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332908748359995455/steam.png?ex=6796f781&is=6795a601&hm=b1867c6762b6c0fac061a2be226fbfe44a85dbc535b64e40481be9bb8d0fb66b&" alt="Steam Icon" width="25"> <!-- Steam icon from Flaticon -->
                     syn
                 </span>
-                <span>→</span>
-            </a>
+                <a href="https://steamcommunity.com/id/SynIsAfk/" target="_blank">→</a>
+            </div>
+            <!-- GitHub Section as a separate button -->
+            <div class="connection">
+                <span>
+                    <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332910386789486713/github.png?ex=6796f908&is=6795a788&hm=7e9b5b65c12951fed101514a91c047b1791d5f7b5ee52f62573d5b52c7ab8d4b&" alt="GitHub Icon" width="20">
+                    GitHub
+                </span>
+                <a href="https://github.com/synisafk" target="_blank">→</a>
+            </div>
         </div>
     </div>
 </body>
