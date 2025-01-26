@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Page - Discord Profile</title>
+    <title>Discord Profile Replica</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,7 +18,7 @@
         .profile-card {
             background-color: #2C2F33;
             border-radius: 10px;
-            width: 600px;
+            width: 400px;
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
@@ -47,48 +47,50 @@
             color: #99AAB5;
             font-size: 14px;
         }
-
-        /* Flex container for About Me and Connections */
-        .about-connections {
-            display: flex;
-            gap: 5px; /* Reduced space between sections even further */
-            margin-top: 0; /* No space above */
-        }
-
-        .about-me, .connections {
-            width: 50%; /* Give each section half of the available space */
-            margin: 0; /* Remove margin */
-        }
-
         .connections {
-            font-size: 16px;
+            margin-top: 20px;
+        }
+        .connection {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #424549;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+        .connection:hover {
+            background-color: #36393F;
+        }
+        .connection span {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .connection a {
+            color: #7289DA;
+            text-decoration: none;
             font-weight: bold;
+            font-size: 18px; /* Adjusted size for arrow */
         }
-
-        /* Remove connection buttons */
-        .connections .connection a {
-            display: none;
+        .connection a:hover {
+            color: #99AAB5; /* Slight color change on hover */
         }
-
-        /* Connecting Line under the headings */
-        h3 {
-            position: relative;
-            margin-bottom: 0; /* Remove space below heading */
+        .button {
             display: inline-block;
-            padding-bottom: 10px;
+            background-color: #7289DA;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
         }
-
-        /* Create the combined line under both About Me and Connections */
-        .about-me h3::after, .connections h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: white;
+        .button:hover {
+            background-color: #99AAB5;
         }
-
     </style>
 </head>
 <body>
@@ -100,19 +102,24 @@
                 <div class="username">wsgsyn</div>
             </div>
         </div>
-
-        <!-- About Me and Connections in flex layout -->
-        <div class="about-connections">
-            <!-- About Me Section -->
-            <div class="about-me">
-                <h3>About Me</h3>
+        <div class="button">About Me</div>
+        <div class="connections">
+            <div class="connection">
+                <span>
+                    <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332877189389090956/Untitled.png?ex=6796da1d&is=6795889d&hm=4ba800bc3aa565b4a0df459ff50f6a12dcbb0e877a82144e44cff2e4902f58cf&" alt="Riot Games Icon" width="20">
+                    Syn#3790
+                </span>
+                <a href="content.html">→</a>
             </div>
-
-            <!-- Connections Section -->
-            <div class="connections">
-                <h3>Connections</h3>
+            <div class="connection">
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111668.png" alt="Twitch Icon" width="20">
+                    synisafk
+                </span>
+                <a href="https://twitch.tv/synisafk" target="_blank">→</a>
+            </div>
         </div>
-
+        <div class="button">Connections</div>
     </div>
 </body>
 </html>
