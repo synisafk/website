@@ -102,20 +102,25 @@
             position: relative;
             margin-bottom: 10px;
         }
-        h3::after {
+        /* Only under "About Me" */
+        .about-me h3::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
             height: 2px;
-            background-color: #99AAB5;
-            box-shadow: 0 0 10px #fff; /* White glow effect */
+            background-color: white;
         }
-
-        /* Hide the Connections section */
-        .connections {
-            display: block;
+        /* Only under "Connections" */
+        .connections h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #7289DA; /* Default Discord Blue */
         }
 
         .back-button {
