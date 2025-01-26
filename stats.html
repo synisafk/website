@@ -59,7 +59,6 @@
             display: flex;
             gap: 15px;
             margin-top: 10px;
-            margin-bottom: 20px;
         }
         .button {
             color: #B0B0B0;
@@ -86,6 +85,27 @@
             margin-top: 20px;
             width: 100%;
         }
+        .button-with-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background-color: #2C2F33;
+            border-radius: 5px;
+            color: #B0B0B0;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .button-with-img:hover {
+            color: #7289DA;
+            background-color: #3C4348;
+        }
+        .button-with-img img {
+            width: 25px;
+        }
     </style>
 </head>
 <body>
@@ -100,13 +120,18 @@
             </div>
         </div>
         <div class="buttons">
-            <a href="https://hypixel.net/player/SynIsAfk" class="button">Hypixel Stats</a> <!-- Hypixel button only -->
+            <a href="https://synisafk.github.io/website/about.html" class="button">About Me</a>
+            <a href="https://synisafk.github.io/website/socials.html" class="button">Socials</a>
+            <a href="https://synisafk.github.io/website/stats.html" class="button">Stats</a>
         </div>
         <div class="line"></div>
 
-        <!-- Socials section can be kept or removed if not needed -->
+        <!-- Hypixel Stats button with image -->
         <div class="socials">
-            <!-- You can keep any specific connections here if necessary -->
+            <a href="https://hypixel.net/player/SynIsAfk" class="button-with-img">
+                <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332915927456678011/hypixel.png?ex=6796fe31&is=6795acb1&hm=d198ed46579a0c1740380c5d03b3457807b803df6c1d9ef3d458b0f20a595c73&" alt="Hypixel Icon">
+                Hypixel Stats
+            </a>
         </div>
     </div>
 </body>
