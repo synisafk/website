@@ -61,14 +61,19 @@
             margin-top: 10px;
         }
         .button {
-            color: #7289DA;
+            color: #B0B0B0;
             font-weight: bold;
             font-size: 18px;
             text-decoration: none;
             cursor: pointer;
+            transition: color 0.3s;
         }
         .button:hover {
-            color: #99AAB5;
+            color: #7289DA; /* Discord's blurple color */
+        }
+        .button.disabled {
+            color: #2C2F33; /* Gray when disabled */
+            cursor: not-allowed;
         }
         .line {
             width: 100%;
@@ -97,8 +102,8 @@
             </div>
         </div>
         <div class="buttons">
-            <a href="https://synisafk.github.io/website/content.html" class="button">About Me</a>
-            <a href="https://synisafk.github.io/website/socials.html" class="button">Connections</a>
+            <a href="https://synisafk.github.io/website/about.html" class="button" id="about-button">About Me</a>
+            <a href="https://synisafk.github.io/website/socials.html" class="button" id="connections-button">Connections</a>
         </div>
         <div class="line"></div>
 
@@ -107,5 +112,15 @@
             <p>Hi, I'm syn! I'm a developer passionate about creating fun and engaging projects. I specialize in web development and Discord bots, but I also enjoy exploring other areas of programming. Feel free to connect with me!</p>
         </div>
     </div>
+
+    <script>
+        // Disable buttons if already on the target page
+        const currentPage = window.location.href;
+
+        // Check if "About Me" button is on the current page
+        if (currentPage.includes("about.html")) {
+            document.getElementById("about-button").classList.add("disabled");
+        }
+    </script>
 </body>
 </html>
