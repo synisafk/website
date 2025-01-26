@@ -59,6 +59,7 @@
             display: flex;
             gap: 15px;
             margin-top: 10px;
+            margin-bottom: 20px;
         }
         .button {
             color: #B0B0B0;
@@ -66,17 +67,14 @@
             font-size: 18px;
             text-decoration: none;
             cursor: pointer;
-            transition: color 0.3s;
-            display: flex;
-            align-items: center;
-        }
-        .button img {
-            margin-right: 10px;
-            width: 20px;
-            height: 20px;
+            padding: 10px 20px;
+            background-color: #2C2F33;
+            border-radius: 5px;
+            transition: color 0.3s, background-color 0.3s;
         }
         .button:hover {
-            color: #7289DA; /* Discord's blurple color */
+            color: #7289DA;
+            background-color: #3C4348;
         }
         .line {
             width: 100%;
@@ -87,34 +85,6 @@
         .socials {
             margin-top: 20px;
             width: 100%;
-        }
-        .connection {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #424549;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            transition: background-color 0.3s;
-        }
-        .connection:hover {
-            background-color: #36393F;
-        }
-        .connection span {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .connection a {
-            color: #7289DA;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            margin-left: 15px;
-        }
-        .connection a:hover {
-            color: #99AAB5;
         }
     </style>
 </head>
@@ -130,18 +100,13 @@
             </div>
         </div>
         <div class="buttons">
-            <a href="https://synisafk.github.io/website/about.html" class="button">About Me</a>
-            <a href="https://synisafk.github.io/website/socials.html" class="button">Socials</a>
-            <a href="https://synisafk.github.io/website/stats.html" class="button">Stats</a>
+            <a href="https://hypixel.net/player/SynIsAfk" class="button">Hypixel Stats</a> <!-- Hypixel button only -->
         </div>
         <div class="line"></div>
 
-        <!-- Hypixel Button -->
-        <div class="connection">
-            <span>
-                <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332915927456678011/hypixel.png?ex=6796fe31&is=6795acb1&hm=d198ed46579a0c1740380c5d03b3457807b803df6c1d9ef3d458b0f20a595c73&" alt="Hypixel" width="20"> Hypixel
-            </span>
-            <a href="https://nadeshiko.io/card/eyJuYW1lIjoiU3luSXNBRksiLCJnYW1lIjoiU0tZQkxPQ0tfR0VORVJBTCIsInNpemUiOiJGVUxMIn0=" target="_blank">→</a>
+        <!-- Socials section can be kept or removed if not needed -->
+        <div class="socials">
+            <!-- You can keep any specific connections here if necessary -->
         </div>
     </div>
 </body>
