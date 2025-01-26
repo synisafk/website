@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wsgsyn - Stats</title>
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/1264103248391045242/1332896904375173180/pfp.png?ex=6796ec7a&is=67959afa&hm=d38a19c1456bee3c801bfead00c8df3e3ca017bbc6ff5cdb00f503272f957e7f&" type="image/png">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1264103248391045242/1332896904375173180/pfp.png?ex=6796ec7a&is=67959afa&hm=d38a19c1456bee3c801bfead00c8df3e3ca017bbc6ff5cdb00f503272f957e7f&" type="image/png"> <!-- Replace with your URL -->
 
     <style>
         body {
@@ -66,14 +66,10 @@
             font-size: 18px;
             text-decoration: none;
             cursor: pointer;
-            padding: 10px 20px;
-            background-color: #2C2F33;
-            border-radius: 5px;
-            transition: color 0.3s, background-color 0.3s;
+            transition: color 0.3s;
         }
         .button:hover {
-            color: #7289DA;
-            background-color: #3C4348;
+            color: #7289DA; /* Discord's blurple color */
         }
         .line {
             width: 100%;
@@ -85,26 +81,41 @@
             margin-top: 20px;
             width: 100%;
         }
-        .button-with-img {
+        .connection {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 10px 20px;
-            background-color: #2C2F33;
+            justify-content: space-between;
+            background-color: #424549;
+            padding: 10px;
             border-radius: 5px;
-            color: #B0B0B0;
-            font-weight: bold;
-            font-size: 18px;
-            text-decoration: none;
-            transition: color 0.3s, background-color 0.3s;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
         }
-        .button-with-img:hover {
+        .connection:hover {
+            background-color: #36393F;
+        }
+        .connection span {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Increased gap to add more space between text and arrow */
+        }
+        .connection a {
             color: #7289DA;
-            background-color: #3C4348;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px; /* Adjusted size for arrow */
+            margin-left: 15px; /* Adjusted left margin for further spacing */
         }
-        .button-with-img img {
-            width: 25px;
+        .connection a:hover {
+            color: #99AAB5; /* Slight color change on hover */
+        }
+        .github-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .github-btn img {
+            width: 20px;
         }
     </style>
 </head>
@@ -112,7 +123,7 @@
     <div class="profile-card">
         <div class="profile-header">
             <div class="avatar">
-                <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332896904375173180/pfp.png?ex=6796ec7a&is=67959afa&hm=d38a19c1456bee3c801bfead00c8df3e3ca017bbc6ff5cdb00f503272f957e7f&" alt="Avatar">
+                <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332896904375173180/pfp.png?ex=6796ec7a&is=67959afa&hm=d38a19c1456bee3c801bfead00c8df3e3ca017bbc6ff5cdb00f503272f957e7f&" alt="Avatar"> <!-- Replace this URL with your image URL -->
             </div>
             <div>
                 <div class="name">syn</div>
@@ -122,16 +133,19 @@
         <div class="buttons">
             <a href="https://synisafk.github.io/website/about.html" class="button">About Me</a>
             <a href="https://synisafk.github.io/website/socials.html" class="button">Socials</a>
-            <a href="https://synisafk.github.io/website/stats.html" class="button">Stats</a>
+            <a href="https://synisafk.github.io/website/stats.html" class="button">Stats</a> 
         </div>
         <div class="line"></div>
 
-        <!-- Hypixel Stats button with image -->
+        <!-- Socials Section -->
         <div class="socials">
-            <a href="https://hypixel.net/player/SynIsAfk" class="button-with-img">
-                <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332915927456678011/hypixel.png?ex=6796fe31&is=6795acb1&hm=d198ed46579a0c1740380c5d03b3457807b803df6c1d9ef3d458b0f20a595c73&" alt="Hypixel Icon">
-                Hypixel Stats
-            </a>
+            <div class="connection">
+                <span>
+                    <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332915927456678011/hypixel.png?ex=6796fe31&is=6795acb1&hm=d198ed46579a0c1740380c5d03b3457807b803df6c1d9ef3d458b0f20a595c73&" alt="Riot Games Icon" width="25">
+                    Hypixel
+                </span>
+                <a href="https://sky.shiiyu.moe/stats/SynIsAFK/Lime" target="_blank">→</a>
+            </div>
         </div>
     </div>
 </body>
