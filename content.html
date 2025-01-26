@@ -3,25 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Page</title>
+    <title>Content Page - Discord Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #23272A;
             color: white;
             margin: 0;
-            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        .content {
+        .profile-card {
             background-color: #2C2F33;
             border-radius: 10px;
+            width: 400px;
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-        h1 {
-            color: #7289DA;
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
         }
-        p {
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            color: white;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .username {
+            color: #99AAB5;
+            font-size: 14px;
+        }
+        .about-me {
+            margin-top: 20px;
+        }
+        .about-me p {
+            font-size: 14px;
+            color: #99AAB5;
+        }
+        .connections {
+            margin-top: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 2px solid #99AAB5;
+            padding-bottom: 10px;
+        }
+        .connection {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #424549;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+        .connection:hover {
+            background-color: #36393F;
+        }
+        .connection span {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .connection a {
+            color: #7289DA;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .connection a:hover {
             color: #99AAB5;
         }
         .back-button {
@@ -33,6 +97,7 @@
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            width: 100%;
         }
         .back-button:hover {
             background-color: #5f73a1;
@@ -40,10 +105,40 @@
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Welcome to the Content Page!</h1>
-        <p>This is where more detailed information about Syn#3790 is shown.</p>
-        <p>Feel free to customize this page with whatever content you like.</p>
+    <div class="profile-card">
+        <div class="profile-header">
+            <div class="avatar">☆</div>
+            <div>
+                <div class="name">syn</div>
+                <div class="username">wsgsyn</div>
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>Welcome to my profile! I’m Syn, a gamer, content creator, and tech enthusiast. I love to play various games, stream on Twitch, and work on new projects!</p>
+        </div>
+
+        <!-- Connections Section -->
+        <div class="connections">
+            Connections
+        </div>
+
+        <div class="connection">
+            <span>
+                <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332877189389090956/Untitled.png?ex=6796da1d&is=6795889d&hm=4ba800bc3aa565b4a0df459ff50f6a12dcbb0e877a82144e44cff2e4902f58cf&" alt="Riot Games Icon" width="20">
+                Syn#3790
+            </span>
+            <a href="#content" target="_self">→</a> <!-- This links to the anchor within the same page -->
+        </div>
+        <div class="connection">
+            <span>
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111668.png" alt="Twitch Icon" width="20">
+                synisafk
+            </span>
+            <a href="https://twitch.tv/synisafk" target="_blank">→</a>
+        </div>
 
         <!-- Back Button -->
         <button class="back-button" onclick="window.location.href='index.html'">Go Back</button>
