@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wsgsyn - Stats</title>
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/1264103248391045242/1332896904375173180/pfp.png?ex=6796ec7a&is=67959afa&hm=d38a19c1456bee3c801bfead00c8df3e3ca017bbc6ff5cdb00f503272f957e7f&" type="image/png"> <!-- Replace with your URL -->
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1264103248391045242/1332896904375173180/pfp.png?ex=6796ec7a&is=67959afa&hm=d38a19c1456bee3c801bfead00c8df3e3ca017bbc6ff5cdb00f503272f957e7f&" type="image/png">
 
     <style>
         body {
@@ -84,12 +84,37 @@
             background-color: #B0B0B0;
             margin-top: 20px;
         }
-        .about-text {
+        .socials {
             margin-top: 20px;
-            font-size: 16px;
-            line-height: 1.5;
-            text-align: center;
-            color: #B0B0B0;
+            width: 100%;
+        }
+        .connection {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #424549;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+        .connection:hover {
+            background-color: #36393F;
+        }
+        .connection span {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .connection a {
+            color: #7289DA;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 15px;
+        }
+        .connection a:hover {
+            color: #99AAB5;
         }
     </style>
 </head>
@@ -97,7 +122,7 @@
     <div class="profile-card">
         <div class="profile-header">
             <div class="avatar">
-                <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332896904375173180/pfp.png?ex=6796ec7a&is=67959afa&hm=d38a19c1456bee3c801bfead00c8df3e3ca017bbc6ff5cdb00f503272f957e7f&" alt="Avatar"> <!-- Replace this URL with your image URL -->
+                <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332896904375173180/pfp.png?ex=6796ec7a&is=67959afa&hm=d38a19c1456bee3c801bfead00c8df3e3ca017bbc6ff5cdb00f503272f957e7f&" alt="Avatar">
             </div>
             <div>
                 <div class="name">syn</div>
@@ -111,16 +136,12 @@
         </div>
         <div class="line"></div>
 
-        <!-- About Me Text -->
-        <div class="about-text">
-            <p>testing ill add more later</p>
-        </div>
-
         <!-- Hypixel Button -->
-        <div class="buttons">
-            <a href="https://nadeshiko.io/card/eyJuYW1lIjoiU3luSXNBRksiLCJnYW1lIjoiU0tZQkxPQ0tfR0VORVJBTCIsInNpemUiOiJGVUxMIn0=" class="button">
-                <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332915927456678011/hypixel.png?ex=6796fe31&is=6795acb1&hm=d198ed46579a0c1740380c5d03b3457807b803df6c1d9ef3d458b0f20a595c73&" alt="Hypixel"> Hypixel
-            </a>
+        <div class="connection">
+            <span>
+                <img src="https://cdn.discordapp.com/attachments/1264103248391045242/1332915927456678011/hypixel.png?ex=6796fe31&is=6795acb1&hm=d198ed46579a0c1740380c5d03b3457807b803df6c1d9ef3d458b0f20a595c73&" alt="Hypixel" width="20"> Hypixel
+            </span>
+            <a href="https://nadeshiko.io/card/eyJuYW1lIjoiU3luSXNBRksiLCJnYW1lIjoiU0tZQkxPQ0tfR0VORVJBTCIsInNpemUiOiJGVUxMIn0=" target="_blank">→</a>
         </div>
     </div>
 </body>
